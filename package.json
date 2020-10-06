@@ -1,0 +1,39 @@
+{
+  "name": "xr-toy",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "remove-docs": "rmdir /s /q docs || rm -r -f docs",
+    "build": "react-scripts build && move build docs || mv build docs",
+    "start": "react-scripts start"
+  },
+  "author": "Olivier Parent",
+  "license": "ISC",
+  "dependencies": {
+    "@react-three/cannon": "^0.5.3",
+    "@react-three/drei": "^2.1.0",
+    "@react-three/flex": "^0.5.2",
+    "@react-three/postprocessing": "^1.4.1",
+    "@react-three/xr": "^1.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "^5.0.3",
+    "three": "^0.121.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "/xr-toy"
+}
