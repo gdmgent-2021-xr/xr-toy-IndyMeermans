@@ -19,10 +19,10 @@ export default () => {
 
   return (
     <primitive
+      ref={logoRef}
       object={gltf.scene}
       onClick={() => setClockwise(!clockwise)}
       position={[0, 0, 0]}
-      ref={logoRef}
     />
   );
 };

@@ -1,30 +1,35 @@
-import React, { Suspense } from "react";
-// import { Canvas } from "react-three-fiber";
-import { FlyControls, OrbitControls } from "@react-three/drei";
-import { DefaultXRControllers, VRCanvas } from "@react-three/xr";
+import React from "react";
+import { Canvas } from "react-three-fiber";
+import { Controls, ControlsProvider } from "react-three-gui";
+import Content from "App/Content";
 
-import {
-  GlTransmissionFormat,
-  Lighting,
-  Suzanne,
-  Tripod,
-} from "App/components";
 import "./styles.css";
 
 export default () => {
+  // const port = 3001;
+  // const socket = io(`http://localhost:${port}`);
+
+  // socket.on("connect", () => {
+  //   console.log("Socket connected: ", socket.connected);
+  // });
+
+  // socket.on("disconnect", () => {
+  //   console.log("Socket connected: ", socket.connected);
+  // });
+
+  // socket.on("telemetry", (message) => {
+  //   console.log("Message:", message);
+  // });
+
   return (
-    <VRCanvas invalidateFrameloop={false}>
-      <OrbitControls enablePan={true} enableRotate={true} enableZoom={true} />
-      <FlyControls dragToLook={true} />
-      {false && <DefaultXRControllers />}
-      {false && <Lighting />}
-      {true && <Tripod />}
-      {false && (
-        <Suspense fallback={null}>
-          <Suzanne />
-          <GlTransmissionFormat />
-        </Suspense>
-      )}
-    </VRCanvas>
+    
+    <ControlsProvider>
+
+      <Canvas camera={{ fov: 100, position: [-1.5, 1.7, 5] }} invalidateFrameloop={false} shadowMap>
+
+        <Content />
+      </Canvas>
+      <Controls title="Controls" />
+    </ControlsProvider>
   );
 };

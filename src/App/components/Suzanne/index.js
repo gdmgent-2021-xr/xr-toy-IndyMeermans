@@ -6,25 +6,27 @@ import suzanne from "./suzanne.glb";
 
 export default () => {
   const [clockwise, setClockwise] = useState(false);
+  const [rotate, setRotate] = useState(false);
   const { nodes, materials } = useGLTF(suzanne, true);
-  const suzanneRef = useRef();
+  const objectRef = useRef();
   const speed = 0.025;
 
-  console.log("nodes:", nodes);
-  console.log("materials:", materials);
-
   useFrame(() => {
-    suzanneRef.current.rotation.x += speed * (clockwise ? 1 : -1);
-    suzanneRef.current.rotation.y += speed * (clockwise ? 1 : -1);
-    suzanneRef.current.rotation.z += speed * (clockwise ? 1 : -1);
+    objectRef.current.rotation.x +=
+      speed * (rotate ? 1 : 0) * (clockwise ? 1 : -1);
+    objectRef.current.rotation.y +=
+      speed * (rotate ? 1 : 0) * (clockwise ? 1 : -1);
+    objectRef.current.rotation.z +=
+      speed * (rotate ? 1 : 0) * (clockwise ? 1 : -1);
   });
 
   return (
-    <mesh
-      geometry={nodes.Suzanne.geometry}
-      material={materials["Paars"]}
+    <group
+      ref={objectRef}
       onClick={() => setClockwise(!clockwise)}
-      ref={suzanneRef}
-    />
+      onDoubleClick={() => setRotate(!rotate)}
+    >
+      <mesh geometry={nodes.Suzanne.geometry} material={materials["Paars"]} />
+    </group>
   );
 };

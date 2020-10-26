@@ -1,13 +1,28 @@
-import React, { useRef } from "react";
+import React from "react";
 
 export default () => {
-  const light = useRef();
-
   return (
     <>
-      <ambientLight intensity={0.9} />
-      <directionalLight intensity={0.5} position={[10, 10, 5]} ref={light} />
-      <pointLight intensity={1.12} position={[0, 0, 0]} />
+      <ambientLight intensity={0.1} />
+      <directionalLight
+        castShadow={true}
+        color={0xffffff}
+        intensity={1}
+        position={[2, 2, 1]}
+      />
+      <hemisphereLight />
+      <pointLight
+        castShadow={true}
+        color={0xff6600}
+        intensity={0.5}
+        position={[0, 0, 4]}
+      />
+      <spotLight
+        castShadow={true}
+        color={0xfff000}
+        position={[0, 4, 4]}
+        intensity={1}
+      />
     </>
   );
 };

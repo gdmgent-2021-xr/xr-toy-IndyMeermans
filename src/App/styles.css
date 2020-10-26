@@ -6,6 +6,9 @@ canvas {
 }
 
 body {
-  background-color: black;
+  background: radial-gradient(#00BCD4 , #dcd7b5);
   margin: 0;
+}
+.Dark {
+  background: radial-gradient(#0c0719 , #01020c) !important;
 }

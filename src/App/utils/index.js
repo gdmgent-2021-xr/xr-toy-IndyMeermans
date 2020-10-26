@@ -1,1 +1,1 @@
-export { default as Convert } from "./Convert";
+export { default as MathCircle } from "./MathCircle";
