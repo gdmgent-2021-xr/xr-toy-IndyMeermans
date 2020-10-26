@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/x-reality/static/css/main.57a14f2d.chunk.css",
-    "main.js": "/x-reality/static/js/main.591d74ad.chunk.js",
-    "main.js.map": "/x-reality/static/js/main.591d74ad.chunk.js.map",
-    "runtime-main.js": "/x-reality/static/js/runtime-main.fd09c317.js",
-    "runtime-main.js.map": "/x-reality/static/js/runtime-main.fd09c317.js.map",
-    "static/js/2.4c5c30ba.chunk.js": "/x-reality/static/js/2.4c5c30ba.chunk.js",
-    "static/js/2.4c5c30ba.chunk.js.map": "/x-reality/static/js/2.4c5c30ba.chunk.js.map",
-    "index.html": "/x-reality/index.html",
-    "precache-manifest.827d36eff4b1951d58c04b54f7e7fab7.js": "/x-reality/precache-manifest.827d36eff4b1951d58c04b54f7e7fab7.js",
-    "service-worker.js": "/x-reality/service-worker.js",
-    "static/css/main.57a14f2d.chunk.css.map": "/x-reality/static/css/main.57a14f2d.chunk.css.map",
-    "static/js/2.4c5c30ba.chunk.js.LICENSE.txt": "/x-reality/static/js/2.4c5c30ba.chunk.js.LICENSE.txt",
-    "static/media/glTF.glb": "/x-reality/static/media/glTF.ce019e05.glb",
-    "static/media/meermans_indy_toy.glb": "/x-reality/static/media/meermans_indy_toy.dfca5ca0.glb",
-    "static/media/moon.glb": "/x-reality/static/media/moon.8c4a4ca6.glb",
-    "static/media/omgeving.glb": "/x-reality/static/media/omgeving.2257e2f1.glb",
-    "static/media/suzanne.glb": "/x-reality/static/media/suzanne.fdd60495.glb"
+    "main.css": "/xr-toy-IndyMeermans/static/css/main.57a14f2d.chunk.css",
+    "main.js": "/xr-toy-IndyMeermans/static/js/main.2312f727.chunk.js",
+    "main.js.map": "/xr-toy-IndyMeermans/static/js/main.2312f727.chunk.js.map",
+    "runtime-main.js": "/xr-toy-IndyMeermans/static/js/runtime-main.233352cf.js",
+    "runtime-main.js.map": "/xr-toy-IndyMeermans/static/js/runtime-main.233352cf.js.map",
+    "static/js/2.a87018f6.chunk.js": "/xr-toy-IndyMeermans/static/js/2.a87018f6.chunk.js",
+    "static/js/2.a87018f6.chunk.js.map": "/xr-toy-IndyMeermans/static/js/2.a87018f6.chunk.js.map",
+    "index.html": "/xr-toy-IndyMeermans/index.html",
+    "precache-manifest.adcb11dadc55025916f0c349cdd49666.js": "/xr-toy-IndyMeermans/precache-manifest.adcb11dadc55025916f0c349cdd49666.js",
+    "service-worker.js": "/xr-toy-IndyMeermans/service-worker.js",
+    "static/css/main.57a14f2d.chunk.css.map": "/xr-toy-IndyMeermans/static/css/main.57a14f2d.chunk.css.map",
+    "static/js/2.a87018f6.chunk.js.LICENSE.txt": "/xr-toy-IndyMeermans/static/js/2.a87018f6.chunk.js.LICENSE.txt",
+    "static/media/glTF.glb": "/xr-toy-IndyMeermans/static/media/glTF.ce019e05.glb",
+    "static/media/meermans_indy_toy.glb": "/xr-toy-IndyMeermans/static/media/meermans_indy_toy.dfca5ca0.glb",
+    "static/media/moon.glb": "/xr-toy-IndyMeermans/static/media/moon.8c4a4ca6.glb",
+    "static/media/omgeving.glb": "/xr-toy-IndyMeermans/static/media/omgeving.2257e2f1.glb",
+    "static/media/suzanne.glb": "/xr-toy-IndyMeermans/static/media/suzanne.fdd60495.glb"
   },
   "entrypoints": [
-    "static/js/runtime-main.fd09c317.js",
-    "static/js/2.4c5c30ba.chunk.js",
+    "static/js/runtime-main.233352cf.js",
+    "static/js/2.a87018f6.chunk.js",
     "static/css/main.57a14f2d.chunk.css",
-    "static/js/main.591d74ad.chunk.js"
+    "static/js/main.2312f727.chunk.js"
   ]
 }

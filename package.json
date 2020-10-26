@@ -1,5 +1,5 @@
 {
-  "name": "x-reality",
+  "name": "xr-toy-IndyMeermans",
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
@@ -37,5 +37,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "/x-reality"
+  "homepage": "/xr-toy-IndyMeermans"
 }
